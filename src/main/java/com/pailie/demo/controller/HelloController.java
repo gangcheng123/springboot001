@@ -10,7 +10,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String hello(@RequestParam(value = "name",defaultValue = "world") String username, Model model){
-        model.addAttribute("message","Hello from the controller");
+        model.addAttribute("message333","Hello from the controller");
         model.addAttribute("message2","welcome"+username);
         System.out.println("ddd");
         return "resulePage1";
